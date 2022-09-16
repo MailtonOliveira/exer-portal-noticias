@@ -2,7 +2,8 @@ const newNoticias = document.querySelector("#listaDeNoticias")
 
 async function getNoticias(){
     try{
-        const response = await fetch("https://newsapi.org/v2/top-headlines?country=br", {
+        const response = await fetch("https://newsapi.org/v2/top-headlines?country=br",{
+            method: "GET",
             headers: {
                 authorization: '4bd9a1199a3a495dad97db8a62d77040'
             },
